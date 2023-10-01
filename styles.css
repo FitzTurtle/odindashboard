@@ -9,6 +9,9 @@ body {
 }
 
 .topHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: 1/2/2/3;
     background-color: red;
 }
