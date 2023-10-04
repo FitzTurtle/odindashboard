@@ -46,3 +46,22 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+
+.projectContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: start;
+    align-items: center;
+    padding: 20px;
+}
+.projects > h1 {
+    padding: 20px;
+}
+
+.projectContainer > .card {
+    height: 250px;
+    width: 400px;
+    background-color: blue;
+}
+
