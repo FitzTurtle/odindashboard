@@ -99,7 +99,7 @@ li > svg {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: start;
+    justify-items: center;
     align-items: center;
     padding: 20px;
 }
@@ -113,3 +113,21 @@ li > svg {
     background-color: var(--cambridge-blue);
 }
 
+#searchlabel svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.searchform {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#searchbar {
+    width: 75%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
