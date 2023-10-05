@@ -32,6 +32,48 @@ body {
     background-color: var(--cambridge-blue);
 }
 
+#searchlabel svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.searchform {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#searchbar {
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.notifications svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    padding-right: 10px;
+}
+
+.notifications h3 {
+    display: flex;
+    align-items: center;
+}
+.notifications h3 svg {
+    height: 50px;
+    width: 50px;
+}
+
 .sidebar {
     display: grid;
     grid-area: 1/1/3/2;
@@ -113,21 +155,4 @@ li > svg {
     background-color: var(--cambridge-blue);
 }
 
-#searchlabel svg{
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
 
-.searchform {
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
-
-#searchbar {
-    width: 75%;
-    height: 30px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-}
