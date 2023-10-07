@@ -32,7 +32,10 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-area: 1/2/2/3;
     background-color: var(--cambridge-blue);
+    box-shadow: rgb(0,0,0,0.25) 0px 2px 5px;
+    z-index: 1;
 }
+
 
 #searchlabel svg{
     width: 25px;
@@ -92,7 +95,7 @@ body {
 .user {
     display: block;
     padding: 10px 20px;
-    min-width: 400px;
+    min-width: 410px;
 }
 
 .headerButtons {
