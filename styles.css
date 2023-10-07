@@ -58,7 +58,7 @@ body {
     padding-right: 30px;
 }
 
-.notifications svg {
+.notifications > svg {
     width: 25px;
     height: 25px;
     fill: white;
@@ -69,9 +69,26 @@ body {
     display: flex;
     align-items: center;
 }
-.notifications h3 svg {
-    height: 50px;
-    width: 50px;
+.notifications h3 svg{
+    height: 35px;
+    width: 35px;
+    border: 5px solid white;
+    border-radius: 50%;
+    fill: white;
+}
+
+.user svg {
+    height: 60px;
+    width: 60px;
+    float: left;
+    fill: white;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.user {
+    display: block;
+    padding: 10px 20px;
+    min-width: 400px;
 }
 
 .sidebar {
@@ -139,20 +156,21 @@ li > svg {
 
 .projectContainer {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: start;
     align-items: center;
     padding: 20px;
 }
-.projects > h1 {
-    padding: 20px;
+.projects > h2 {
+    padding: 20px 20px 0px 20px;
 }
 
 .projectContainer > .card {
-    height: 250px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     background-color: var(--cambridge-blue);
+    border-radius: 5px;
 }
 
 
