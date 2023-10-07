@@ -6,10 +6,12 @@
 :root {
     /* CSS HSL */
 --cambridge-blue: hsla(172, 19%, 62%, 1);
---charcoal: hsla(203, 19%, 30%, 1);
+--charcoal: hsl(201.12deg 20.82% 79.7%);
 --dark-slate-gray: hsla(169, 26%, 20%, 1);
 --eerie-black: hsla(120, 5%, 11%, 1);
 --night: hsla(164, 71%, 4%, 1);
+--svgfill: white;
+
   font-family: newfont, Arial, Helvetica, sans-serif;
 }
 
@@ -61,7 +63,7 @@ body {
 #alarm {
     width: 25px;
     height: 25px;
-    fill: white;
+    fill: var(--svgfill);
     padding-right: 10px;
 }
 
@@ -72,9 +74,9 @@ body {
 #ghost{
     height: 35px;
     width: 35px;
-    border: 3px solid white;
+    border: 3px solid var(--svgfill);
     border-radius: 50%;
-    fill: white;
+    fill: var(--svgfill);
     margin-right: 20px;
 }
 
@@ -82,9 +84,10 @@ body {
     height: 60px;
     width: 60px;
     float: left;
-    fill: white;
-    border: 5px solid white;
+    fill: var(--svgfill);
+    border: 5px solid var(--svgfill);
     border-radius: 50%;
+    margin-right: 10px;
 }
 .user {
     display: block;
@@ -104,7 +107,7 @@ body {
     background-color: var(--dark-slate-gray);
     border-radius: 15px;
     border-style: none;
-    color: white;
+    color: var(--svgfill);
     font-family: inherit;
 }
 
@@ -116,7 +119,7 @@ body {
     justify-content: center;
     padding: 20px;
     font-size: 1.3em;
-    color: white;
+    color: var(--svgfill);
 }
 
 .sidebar h1 {
@@ -130,7 +133,7 @@ h1 > svg {
     display: inline;
     width: 50px;
     height: 50px;
-    fill: white;
+    fill: var(--svgfill);
 }
 
 
@@ -150,7 +153,7 @@ ul > li {
 li > svg {
     width: 25px;
     height: 25px;
-    fill: white;
+    fill: var(--svgfill);
 }
 
 
@@ -184,10 +187,33 @@ li > svg {
 }
 
 .projectContainer > .card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     height: 200px;
     width: 300px;
     background-color: var(--cambridge-blue);
     border-radius: 5px;
+    padding: 15px;
+    font-size: .8em;
+    border-left: 10px solid var(--night);
+    box-shadow: rgb(0,0,0,0.25) 5px 5px 5px;
 }
 
+.card p {
+    margin-bottom: auto;
+}
+
+.cardButtons {
+    align-self: flex-end;
+}
+.cardButtons svg {
+    padding-left: 10px;
+}
+
+.cardButtons svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--svgfill)
+}
 
