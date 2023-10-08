@@ -172,16 +172,12 @@ li > svg {
     list-style-type: none;
 }
 
-.updates {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
 
 .projectContainer {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: start;
+    justify-items: center;
     align-items: center;
     padding: 20px;
 }
@@ -220,3 +216,54 @@ li > svg {
     fill: var(--svgfill)
 }
 
+.updates{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.Announcements h3 {
+    padding: 25px 0px 0px;
+    margin-bottom: 20px;
+}
+
+.individualAnnounce, .individualTrending {
+    background-color: var(--cambridge-blue);
+    border-radius: 15px;
+    font-size: .8em;
+    padding: 15px;
+    min-width: 30ch;
+}
+
+.individualAnnounce hr {
+    margin: 10px 0px;
+}
+
+.Trending h3 {
+    margin: 20px 0px;
+}
+
+
+.individualTrending {
+    display: flex;
+    flex-direction: column;
+}
+
+.Trending {
+    padding-bottom: 0px;
+}
+
+.trendUser svg {
+    width: 35px;
+    height: 35px;
+    border: 3px solid var(--svgfill);
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.trendUser {
+    padding: 10px 0px;
+}
