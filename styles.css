@@ -54,6 +54,7 @@ body {
     height: 30px;
     border-radius: 10px;
     margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 .notifications {
@@ -114,6 +115,15 @@ body {
     font-family: inherit;
 }
 
+.headerButtons button:hover {
+    background-color: var(--eerie-black);
+}
+
+.headerButtons button:active {
+    background-color: var(--dark-slate-gray);
+    border: 3px inset var(--eerie-black);
+}
+
 .sidebar {
     display: grid;
     grid-area: 1/1/3/2;
@@ -159,6 +169,23 @@ li > svg {
     fill: var(--svgfill);
 }
 
+.sidebar ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.sidebar ul li:hover{
+    background-color: var(--eerie-black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar ul li:active {
+    background-color: var(--dark-slate-gray);
+    user-select: none;
+}
+
+
 
 .main-content {
     display: grid;
@@ -167,10 +194,7 @@ li > svg {
     grid-template-columns: 3fr 1fr;
 }
 
-.sidebar ul {
-    padding: 0px;
-    list-style-type: none;
-}
+
 
 
 .projectContainer {
@@ -208,6 +232,12 @@ li > svg {
 }
 .cardButtons svg {
     padding-left: 10px;
+}
+
+.cardButtons svg:hover {
+    fill: var(--dark-slate-gray);
+    cursor: pointer;
+    user-select: none;
 }
 
 .cardButtons svg {
@@ -262,6 +292,7 @@ li > svg {
     border-radius: 50%;
     float: left;
     margin-right: 20px;
+    fill: White;
 }
 
 .trendUser {
